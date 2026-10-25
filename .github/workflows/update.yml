@@ -1,0 +1,35 @@
+name: 月次シグナル更新
+
+on:
+  schedule:
+    # 毎月1〜10日の 10:00 JST に実行。全ファンドの月末基準価額が出そろった最初の日に新しいシグナルが記録される
+    - cron: '0 1 1-10 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update.mjs
+      - name: 変更があればコミット
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs
+          if git diff --cached --quiet; then
+            echo '変更なし'
+          else
+            git commit -m "シグナル更新 $(date -u +%Y-%m-%d)"
+            git push
+          fi

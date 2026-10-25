@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>戦略の解説 | レラティブストレングス・シグナル</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+<a class="brand" href="index.html">レラティブストレングス・シグナル</a>
+<nav><a href="index.html">シグナル</a><a href="history.html">履歴</a><a href="strategy.html" aria-current="page">戦略の解説</a></nav>
+</header>
+<main>
+<h1>戦略の解説</h1>
+
+<h2>レラティブストレングス投資とは</h2>
+<p>レラティブストレングス（相対的な強さ）投資は、複数の資産のうち、最近の値動きが強い資産に資金を移していく戦略です。強い資産はしばらく強い状態が続きやすいという「モメンタム」の性質を利用します。さらに、価格が長期の移動平均を下回った資産は持たないことで、大きな下落相場を避けることを狙います。</p>
+
+<h2>ルール</h2>
+<ol>
+<li>毎月末に、8つの資産それぞれの過去3ヶ月・6ヶ月・12ヶ月のリターンを計算し、その平均（レラティブストレングス）が大きい順に順位を付けます。</li>
+<li>月末の価格が、直近12ヶ月の月末価格の平均（12ヶ月移動平均）を上回っていれば「Buy」、そうでなければ「Sell」とします。</li>
+<li>レラティブストレングス上位2位の資産に50%ずつ配分します。</li>
+<li>上位2位の中に「Sell」の資産がある場合、その50%は現金で保有します。</li>
+<li>翌月初に、新しいポートフォリオに合わせて売買（リバランス）します。</li>
+</ol>
+
+<h2>対象ファンド</h2>
+<p>資産ごとに、投資信託とETFのうち年間総コストが最も低いものを採用しています。年間総コストは「信託報酬 ＋ 往復売買コスト × 3回」で計算しています。</p>
+<table class="funds">
+<thead><tr><th>資産</th><th>候補</th><th class="num">信託報酬<br>（税込）</th><th class="num">年間<br>総コスト</th></tr></thead>
+<tbody>
+<tr class="group">
+<td rowspan="2">日本株</td>
+<td><strong>採用</strong> SBI・iシェアーズ・TOPIXインデックス・ファンド<span class="sub">投信</span></td>
+<td class="num">0.0638%</td>
+<td class="num">0.064%</td>
+</tr>
+<tr>
+
+<td>iシェアーズ・コア TOPIX ETF<span class="sub">ETF・1475</span></td>
+<td class="num">0.0495%</td>
+<td class="num">0.350%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">先進国株</td>
+<td><strong>採用</strong> SBI・先進国株式インデックス・ファンド<span class="sub">投信</span></td>
+<td class="num">0.0682%</td>
+<td class="num">0.068%</td>
+</tr>
+<tr>
+
+<td>MAXIS海外株式（MSCIコクサイ）上場投信<span class="sub">ETF・1550</span></td>
+<td class="num">0.165%</td>
+<td class="num">0.465%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">新興国株</td>
+<td><strong>採用</strong> SBI・新興国株式インデックス・ファンド<span class="sub">投信</span></td>
+<td class="num">0.066%</td>
+<td class="num">0.066%</td>
+</tr>
+<tr>
+
+<td>上場インデックスファンド海外新興国株式（MSCIエマージング）<span class="sub">ETF・1681</span></td>
+<td class="num">0.165%</td>
+<td class="num">0.465%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">日本債券</td>
+<td><strong>採用</strong> eMAXIS Slim国内債券インデックス<span class="sub">投信</span></td>
+<td class="num">0.132%</td>
+<td class="num">0.132%</td>
+</tr>
+<tr>
+
+<td>iシェアーズ・コア 日本国債 ETF<span class="sub">ETF・2561</span></td>
+<td class="num">0.066%</td>
+<td class="num">0.366%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">先進国債券</td>
+<td><strong>採用</strong> eMAXIS Slim先進国債券インデックス（除く日本）<span class="sub">投信</span></td>
+<td class="num">0.154%</td>
+<td class="num">0.154%</td>
+</tr>
+<tr>
+
+<td>NEXT FUNDS 外国債券・FTSE世界国債インデックス（除く日本・為替ヘッジなし）連動型上場投信<span class="sub">ETF・2511</span></td>
+<td class="num">0.132%</td>
+<td class="num">0.432%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">新興国債券</td>
+<td><strong>採用</strong> iFree新興国債券インデックス<span class="sub">投信</span></td>
+<td class="num">0.242%</td>
+<td class="num">0.242%</td>
+</tr>
+<tr>
+
+<td>上場インデックスファンド新興国債券<span class="sub">ETF・1566</span></td>
+<td class="num">0.385%</td>
+<td class="num">0.685%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">日本リート</td>
+<td><strong>採用</strong> eMAXIS Slim国内リートインデックス<span class="sub">投信</span></td>
+<td class="num">0.187%</td>
+<td class="num">0.187%</td>
+</tr>
+<tr>
+
+<td>MAXIS Jリート上場投信<span class="sub">ETF・1597</span></td>
+<td class="num">0.1595%</td>
+<td class="num">0.460%</td>
+</tr>
+<tr class="group">
+<td rowspan="2">先進国リート</td>
+<td><strong>採用</strong> eMAXIS Slim先進国リートインデックス（除く日本）<span class="sub">投信</span></td>
+<td class="num">0.22%</td>
+<td class="num">0.220%</td>
+</tr>
+<tr>
+
+<td>NEXT FUNDS 外国REIT・S&amp;P先進国REIT指数（除く日本・為替ヘッジなし）連動型上場投信<span class="sub">ETF・2515</span></td>
+<td class="num">0.187%</td>
+<td class="num">0.487%</td>
+</tr>
+</tbody>
+</table>
+<ul class="note">
+<li>2020年10月〜2026年9月の72ヶ月分のシグナルでは、1年保有するあいだに平均約3回売買（往復）していた（1回あたりの保有は約4ヶ月）。</li>
+<li>ETFの往復売買コストは売買手数料0円（大手ネット証券の国内ETF）と、スプレッド（売値と買値の差）を0.1%と仮定。</li>
+<li>投資信託は購入時手数料・信託財産留保額なし。</li>
+<li>選定基準: 資産クラスごとに一般の個人が買える投資信託と国内ETF（為替ヘッジなし、純資産100億円以上、設定1年以上。DC専用・ラップ/SMA専用は除外）を比べ、年間総コストが最も低いものを採用する。同じ値なら純資産が大きい方。（2026/10/25 時点。年1回程度見直します）</li>
+<li>シグナルの判定には、どの資産も投資信託の基準価額（分配金込み）を使っています。</li>
+</ul>
+
+<h2>データ</h2>
+<p>基準価額は一般社団法人投資信託協会の<a href="https://toushin-lib.fwg.ne.jp/">投信総合検索ライブラリー</a>から取得しています。分配金は再投資したものとして計算しています。毎月初、すべてのファンドの月末基準価額が確定した後に自動で更新します。</p>
+
+<h2>参考</h2>
+<ul>
+<li><a href="https://qiita.com/hiroshi_ichihara/items/caaff4ddf09c2784473c">レラティブストレングス投資の月次シグナル判定（Qiita）</a> — シグナルの計算方法はこの記事に準拠しています。</li>
+<li>Mebane T. Faber, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=962461">A Quantitative Approach to Tactical Asset Allocation</a>（SSRN）</li>
+<li>Mebane T. Faber, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1585517">Relative Strength Strategies for Investing</a>（SSRN）</li>
+</ul>
+</main>
+<footer>
+<p><strong>免責事項</strong></p>
+<p>本サイトは情報提供のみを目的としており、特定の金融商品の売買を勧めるものではなく、投資助言ではありません。掲載している情報は正確性・完全性を保証するものではありません。過去の成績は将来の成果を保証しません。投資は自己責任でお願いします。</p>
+</footer>
+</body>
+</html>

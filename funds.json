@@ -1,0 +1,70 @@
+{
+  "reviewed": "2026-10-25",
+  "criteria": "資産クラスごとに一般の個人が買える投資信託と国内ETF（為替ヘッジなし、純資産100億円以上、設定1年以上。DC専用・ラップ/SMA専用は除外）を比べ、年間総コストが最も低いものを採用する。同じ値なら純資産が大きい方。",
+  "costModel": {
+    "tradesPerHoldingYear": 3,
+    "tradesNote": "2020年10月〜2026年9月の72ヶ月分のシグナルでは、1年保有するあいだに平均約3回売買（往復）していた（1回あたりの保有は約4ヶ月）。",
+    "etfRoundTrip": 0.1,
+    "etfNote": "ETFの往復売買コストは売買手数料0円（大手ネット証券の国内ETF）と、スプレッド（売値と買値の差）を0.1%と仮定。",
+    "fundRoundTrip": 0,
+    "fundNote": "投資信託は購入時手数料・信託財産留保額なし。"
+  },
+  "assets": [
+    {
+      "id": "JE", "asset": "日本株", "isin": "JP90C000PPX2", "assoc": "89312237",
+      "candidates": [
+        { "type": "投信", "name": "SBI・iシェアーズ・TOPIXインデックス・ファンド", "fee": 0.0638 },
+        { "type": "ETF", "code": "1475", "name": "iシェアーズ・コア TOPIX ETF", "fee": 0.0495 }
+      ]
+    },
+    {
+      "id": "IE", "asset": "先進国株", "isin": "JP90C000FVY9", "assoc": "89311181",
+      "candidates": [
+        { "type": "投信", "name": "SBI・先進国株式インデックス・ファンド", "fee": 0.0682 },
+        { "type": "ETF", "code": "1550", "name": "MAXIS海外株式（MSCIコクサイ）上場投信", "fee": 0.165 }
+      ]
+    },
+    {
+      "id": "EE", "asset": "新興国株", "isin": "JP90C000FQQ5", "assoc": "8931117C",
+      "candidates": [
+        { "type": "投信", "name": "SBI・新興国株式インデックス・ファンド", "fee": 0.066 },
+        { "type": "ETF", "code": "1681", "name": "上場インデックスファンド海外新興国株式（MSCIエマージング）", "fee": 0.165 }
+      ]
+    },
+    {
+      "id": "JB", "asset": "日本債券", "isin": "JP90C000ENB7", "assoc": "03318172",
+      "candidates": [
+        { "type": "投信", "name": "eMAXIS Slim国内債券インデックス", "fee": 0.132 },
+        { "type": "ETF", "code": "2561", "name": "iシェアーズ・コア 日本国債 ETF", "fee": 0.066 }
+      ]
+    },
+    {
+      "id": "IB", "asset": "先進国債券", "isin": "JP90C000END3", "assoc": "0331A172",
+      "candidates": [
+        { "type": "投信", "name": "eMAXIS Slim先進国債券インデックス（除く日本）", "fee": 0.154 },
+        { "type": "ETF", "code": "2511", "name": "NEXT FUNDS 外国債券・FTSE世界国債インデックス（除く日本・為替ヘッジなし）連動型上場投信", "fee": 0.132 }
+      ]
+    },
+    {
+      "id": "EB", "asset": "新興国債券", "isin": "JP90C000DVU2", "assoc": "0431U169",
+      "candidates": [
+        { "type": "投信", "name": "iFree新興国債券インデックス", "fee": 0.242 },
+        { "type": "ETF", "code": "1566", "name": "上場インデックスファンド新興国債券", "fee": 0.385 }
+      ]
+    },
+    {
+      "id": "JR", "asset": "日本リート", "isin": "JP90C000JD23", "assoc": "0331119A",
+      "candidates": [
+        { "type": "投信", "name": "eMAXIS Slim国内リートインデックス", "fee": 0.187 },
+        { "type": "ETF", "code": "1597", "name": "MAXIS Jリート上場投信", "fee": 0.1595 }
+      ]
+    },
+    {
+      "id": "IR", "asset": "先進国リート", "isin": "JP90C000JD31", "assoc": "0331219A",
+      "candidates": [
+        { "type": "投信", "name": "eMAXIS Slim先進国リートインデックス（除く日本）", "fee": 0.22 },
+        { "type": "ETF", "code": "2515", "name": "NEXT FUNDS 外国REIT・S&P先進国REIT指数（除く日本・為替ヘッジなし）連動型上場投信", "fee": 0.187 }
+      ]
+    }
+  ]
+}
