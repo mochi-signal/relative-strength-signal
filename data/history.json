@@ -1,5 +1,62 @@
 [
   {
+    "month": "2026-10",
+    "ranking": [
+      {
+        "id": "JE",
+        "rs": 0.095563,
+        "signal": "Buy"
+      },
+      {
+        "id": "IE",
+        "rs": 0.079412,
+        "signal": "Buy"
+      },
+      {
+        "id": "IR",
+        "rs": 0.00979,
+        "signal": "Buy"
+      },
+      {
+        "id": "EE",
+        "rs": -0.000578,
+        "signal": "Sell"
+      },
+      {
+        "id": "EB",
+        "rs": -0.004277,
+        "signal": "Sell"
+      },
+      {
+        "id": "IB",
+        "rs": -0.015505,
+        "signal": "Sell"
+      },
+      {
+        "id": "JB",
+        "rs": -0.0188,
+        "signal": "Sell"
+      },
+      {
+        "id": "JR",
+        "rs": -0.106369,
+        "signal": "Sell"
+      }
+    ],
+    "portfolio": [
+      {
+        "id": "JE",
+        "weight": 0.5
+      },
+      {
+        "id": "IE",
+        "weight": 0.5
+      }
+    ],
+    "sells": [],
+    "buys": []
+  },
+  {
     "month": "2026-09",
     "ranking": [
       {
